@@ -71,7 +71,7 @@
     End Sub
 
     Private Sub AnimeFLVToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AnimeFLVToolStripMenuItem1.Click
-        WebBrowser1.Navigate("https://www.animeflv.net")
+        WebBrowser1.Navigate("https://www3.animeflv.net")
     End Sub
 
     Private Sub Atras_Click(sender As Object, e As EventArgs) Handles Atras.Click
