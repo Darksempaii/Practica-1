@@ -28,6 +28,8 @@ Partial Class Reproductor
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AbrirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HerramientasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PantallaCompletaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
@@ -42,15 +44,15 @@ Partial Class Reproductor
         Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(0, 24)
         Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
         Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(799, 426)
+        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(624, 417)
         Me.AxWindowsMediaPlayer1.TabIndex = 0
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.AyudaToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.HerramientasToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(799, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(624, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -63,20 +65,42 @@ Partial Class Reproductor
         '
         'AbrirToolStripMenuItem
         '
+        Me.AbrirToolStripMenuItem.AccessibleName = "Abrir"
+        Me.AbrirToolStripMenuItem.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane
         Me.AbrirToolStripMenuItem.Name = "AbrirToolStripMenuItem"
+        Me.AbrirToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
         Me.AbrirToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AbrirToolStripMenuItem.Text = "Abrir"
         '
         'CerrarToolStripMenuItem
         '
         Me.CerrarToolStripMenuItem.Name = "CerrarToolStripMenuItem"
-        Me.CerrarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CerrarToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
         Me.CerrarToolStripMenuItem.Text = "Salir"
+        '
+        'HerramientasToolStripMenuItem
+        '
+        Me.HerramientasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PantallaCompletaToolStripMenuItem})
+        Me.HerramientasToolStripMenuItem.Name = "HerramientasToolStripMenuItem"
+        Me.HerramientasToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.HerramientasToolStripMenuItem.Text = "Ver"
+        '
+        'PantallaCompletaToolStripMenuItem
+        '
+        Me.PantallaCompletaToolStripMenuItem.AccessibleName = "Fullscreen"
+        Me.PantallaCompletaToolStripMenuItem.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane
+        Me.PantallaCompletaToolStripMenuItem.Name = "PantallaCompletaToolStripMenuItem"
+        Me.PantallaCompletaToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F11
+        Me.PantallaCompletaToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.PantallaCompletaToolStripMenuItem.Text = "Pantalla Completa"
         '
         'AyudaToolStripMenuItem
         '
+        Me.AyudaToolStripMenuItem.AccessibleName = "Acerca de"
+        Me.AyudaToolStripMenuItem.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonMenu
         Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcercaDeToolStripMenuItem})
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
         Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
         Me.AyudaToolStripMenuItem.Text = "Ayuda"
         '
@@ -88,20 +112,23 @@ Partial Class Reproductor
         '
         'OpenFileDialog1
         '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        Me.OpenFileDialog1.DefaultExt = "mp4"
+        Me.OpenFileDialog1.Filter = "Archivos MP4|*.mp4|Archivos MKV|*.mkv"
         Me.OpenFileDialog1.Multiselect = True
         '
         'Reproductor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(799, 450)
+        Me.ClientSize = New System.Drawing.Size(624, 441)
         Me.Controls.Add(Me.AxWindowsMediaPlayer1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MinimumSize = New System.Drawing.Size(249, 108)
         Me.Name = "Reproductor"
         Me.Text = "Video Player"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -118,4 +145,6 @@ Partial Class Reproductor
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AcercaDeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HerramientasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PantallaCompletaToolStripMenuItem As ToolStripMenuItem
 End Class

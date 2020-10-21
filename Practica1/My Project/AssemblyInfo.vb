@@ -9,12 +9,12 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("Practica1")>
-<Assembly: AssemblyDescription("Practica 1 de programacion")>
+<Assembly: AssemblyTitle("Start Line")>
+<Assembly: AssemblyDescription("Start Line Project")>
 <Assembly: AssemblyCompany("Darksempaii")>
-<Assembly: AssemblyProduct("Aplicacion simple")>
-<Assembly: AssemblyCopyright("Copyright ©  2018")>
-<Assembly: AssemblyTrademark("Conalep172")>
+<Assembly: AssemblyProduct("Start Line Project")>
+<Assembly: AssemblyCopyright("Copyright ©  2020")>
+<Assembly: AssemblyTrademark("Dark Company")>
 
 <Assembly: ComVisible(True)>
 
@@ -32,6 +32,6 @@ Imports System.Runtime.InteropServices
 ' mediante el carácter '*', como se muestra a continuación:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("0.2.8.0")>
-<Assembly: AssemblyFileVersion("0.2.8.0")>
+<Assembly: AssemblyVersion("0.3.0.5")>
+<Assembly: AssemblyFileVersion("0.3.0.0")>
 <Assembly: NeutralResourcesLanguage("es-MX")>
