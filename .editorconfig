@@ -1,0 +1,4 @@
+﻿[*.vb]
+
+# BC42016: Conversión implícita
+dotnet_diagnostic.BC42016.severity = silent
