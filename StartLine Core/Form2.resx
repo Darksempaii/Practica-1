@@ -208,13 +208,13 @@
     <value>326, 212</value>
   </data>
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 17</value>
+    <value>114, 17</value>
   </data>
   <data name="Label6.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="Label6.Text" xml:space="preserve">
-    <value>Version: 0.6.5.2</value>
+    <value>Version: 1.0 Final</value>
   </data>
   <data name="&gt;&gt;Label6.Name" xml:space="preserve">
     <value>Label6</value>
@@ -2098,9 +2098,6 @@
         YML7aV3LrPZGQltnQpM/P/Dd0yMLfV4NeXNLwwA0pCHnsDQMQEMacg5LwwA0pCHnsDQMQEMacg5LwwA0
         pCHnsPx/SLrOu8IL3pwAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>595, 346</value>
