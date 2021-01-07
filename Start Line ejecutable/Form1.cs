@@ -11,6 +11,10 @@ namespace Start_Line_ejecutable
             InitializeComponent();
         }
 
+        public Form1(Form1 form1)
+        {
+        }
+
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
